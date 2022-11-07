@@ -1,0 +1,35 @@
+
+###
+GET https://localhost:3000/api/fruits HTTP/1.1
+
+###
+DELETE  https://localhost:3000/api/fruits/6368ee6dfaffeb7277bf70bd HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlByZXNoZW4iLCJpYXQiOjE2Njc4MjExMjksImV4cCI6MTY2NzgyNDcyOX0.gZMVYbFagkQu8URbr102NhlH60dguJAGu0bb337yfRo
+###
+POST https://localhost:3000/api/users/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Preshen",
+    "password": "Appleisbetterthansamsung"
+}
+###
+POST https://localhost:3000/api/users/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Preshen",
+    "password": "Appleisbetterthansamsung"
+}
+
+###
+POST https://localhost:3000/api/fruits HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlByZXNoZW4iLCJpYXQiOjE2Njc4MjExMjksImV4cCI6MTY2NzgyNDcyOX0.gZMVYbFagkQu8URbr102NhlH60dguJAGu0bb337yfRo
+
+{
+ "id": "6",
+ "name": "banana"
+}
+
+
